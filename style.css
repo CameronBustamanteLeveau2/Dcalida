@@ -427,10 +427,78 @@ header {
 
     .contact .row form .box {
         width: 100%;
+
+    }
+    .footer .credit {text-align: center;
     }
    
 }
 
+/* Hacer que el contenido se adapte a diferentes tamaños de pantalla */
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        display: none;
+    }
+
+    .nav-icons {
+        margin-top: 10px;
+    }
+
+    .menu .box-container,
+    .facility .box-container {
+        grid-template-columns: 1fr;
+    }
+
+    .box p {
+        width: 90%;
+    }
+
+    .home-bg .home .content {
+        max-width: 90%;
+    }
+
+    .heading h3 {
+        font-size: 3rem;
+    }
+
+    .review-container {
+        flex-direction: column;
+    }
+
+    .contact .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact .row .image img {
+        width: 80%;
+    }
+
+    .footer .box-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Mostrar el menú hamburguesa */
+    .menu-icon {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
 
 .sorteos .box-container{
     display: grid;
