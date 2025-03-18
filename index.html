@@ -11,7 +11,6 @@
     <header>
         <div class="nav container">
             <img src="img/logo.png" alt="Logo Hosting Premium" class="logo"> 
-
             <nav class="navbar">
 
                 <a href="#inicio" class="nav-link">Inicio</a>
@@ -22,7 +21,6 @@
             <div class="nav-icons">
                 <a href="#"><i class='bx bxs-briefcase'></i></a>
                 <a href="#"><i class='bx bxs-time'></i></a>
-
             </div>
         </div>
     </header>
@@ -300,6 +298,11 @@
 
         <div class="credit"> &copy; Copyright @ 2024 | All rights reserved! </div>
     </section>
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('.navbar').classList.toggle('active');
+        });
+    </script>
     
 </body>
 </html>
