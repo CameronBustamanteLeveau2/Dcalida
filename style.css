@@ -15,7 +15,6 @@ body {
     font-family: Arial, sans-serif;
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
-  
     font-style: normal;
 }
 
@@ -354,7 +353,7 @@ header {
 }
 
 .contact .row .image img {
-    width: 600px;
+    width: 550px;
     height: 450px;
     margin-left: 20px;
 }
@@ -457,18 +456,37 @@ header {
     }
     .footer .box-container .box {
         flex: 1; 
-        min-width: 35rem; 
+        width: 100%;
+        margin-left: 100px ;
+        margin-right: 100px ;
+
         text-align: center;
     }
     
     .footer .box-container .box p {
-        min-width: 35rem; 
         margin-bottom: 20px ;
         }
     
 }
 
 @media (max-width: 680px) {
+    .nav {
+        width: 80%;
+
+    }
+ 
+    .footer .box-container .box {
+        flex: 1; 
+        width: 100%;
+        margin-left: 100px ;
+        margin-right: 100px ;
+
+        text-align: center;
+    }
+    
+    .footer .box-container .box p {
+        margin-bottom: 20px ;
+        }
     .contact .row {
         gap: 1rem;
     }
@@ -486,11 +504,39 @@ header {
         width: 100%;
 
     }
-    .footer .credit {text-align: center;
+    .footer .credit {
+        text-align: center;
     }
-   
+    .facility .box-container .box{
+        margin-left: 30px;
+        margin-right: 30px;
+
+    }
+    .menu .box-container .box{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .team .box-container .box{
+        margin-left: 40px;
+        margin-right: 40px;
+
+    }
+    .sorteos .box-container .box{
+        margin-left: 40px;
+        margin-right: 40px;
+
+    }
+    .contact .row .image img {
+        width:700px;
+        margin-left: 20px;
+        margin-right: 20px;   
+}
+.contact .cuadro{
+    margin-left: 40px;
+    margin-right: 40px; 
 }
 
+}
 
 .sorteos .box-container{
     display: grid;
